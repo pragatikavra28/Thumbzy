@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-poppins: "Poppins", sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    @apply bg-black text-white text-sm antialiased font-poppins;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* =========================================
+   LIGHT THEME
+   ========================================= */
+
+html.light body {
+    color: #111111;
+    background: #e8bfd0;
+}
+
+/* Main background */
+html.light .bg-black {
+    background-color: #e8bfd0;
+}
+
+/* Mobile menu overlay */
+html.light .bg-black\/40 {
+    background-color: rgba(232, 191, 208, 0.94);
+}
+
+/* =========================================
+   TEXT
+   ========================================= */
+
+/* White text → black */
+html.light .text-white {
+    color: #111111;
+}
+
+html.light .text-white\/90 {
+    color: rgba(17, 17, 17, 0.90);
+}
+
+html.light .text-white\/80 {
+    color: rgba(17, 17, 17, 0.80);
+}
+
+html.light .text-white\/70 {
+    color: rgba(17, 17, 17, 0.70);
+}
+
+html.light .text-white\/60 {
+    color: rgba(17, 17, 17, 0.60);
+}
+
+html.light .text-white\/50 {
+    color: rgba(17, 17, 17, 0.50);
+}
+
+html.light .text-white\/40 {
+    color: rgba(17, 17, 17, 0.40);
+}
+
+html.light .text-white\/30 {
+    color: rgba(17, 17, 17, 0.30);
+}
+
+/* Zinc text → black/dark */
+html.light .text-zinc-100 {
+    color: #111111;
+}
+
+html.light .text-zinc-200 {
+    color: #151515;
+}
+
+html.light .text-zinc-300 {
+    color: #222222;
+}
+
+html.light .text-zinc-400 {
+    color: #333333;
+}
+
+html.light .text-zinc-500 {
+    color: #444444;
+}
+
+html.light .text-zinc-600 {
+    color: #333333;
+}
+
+/* Slate text */
+html.light .text-slate-300 {
+    color: #252525;
+}
+
+html.light .text-slate-400 {
+    color: #333333;
+}
+
+html.light .text-slate-500 {
+    color: #444444;
+}
+
+html.light .text-slate-600 {
+    color: #333333;
+}
+
+html.light .text-slate-700 {
+    color: #222222;
+}
+
+html.light .text-slate-800 {
+    color: #181818;
+}
+
+html.light .text-slate-900 {
+    color: #111111;
+}
+
+/* =========================================
+   CARDS / TRANSPARENT ELEMENTS
+   ========================================= */
+
+html.light .bg-white\/5 {
+    background-color: rgba(255, 255, 255, 0.32);
+}
+
+html.light .bg-white\/6 {
+    background-color: rgba(255, 255, 255, 0.36);
+}
+
+html.light .bg-white\/8 {
+    background-color: rgba(255, 255, 255, 0.42);
+}
+
+html.light .bg-white\/10 {
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+html.light .bg-white\/20 {
+    background-color: rgba(255, 255, 255, 0.50);
+}
+
+/* Borders */
+html.light .border-white\/10 {
+    border-color: rgba(17, 17, 17, 0.16);
+}
+
+html.light .border-white\/12 {
+    border-color: rgba(17, 17, 17, 0.18);
+}
+
+html.light .border-white\/20 {
+    border-color: rgba(17, 17, 17, 0.22);
+}
+
+/* =========================================
+   PINK
+   ========================================= */
+
+html.light .text-pink-300 {
+    color: #c21868;
+}
+
+html.light .text-pink-400 {
+    color: #c21868;
+}
+
+html.light .text-pink-500 {
+    color: #c21868;
+}
+
+html.light .bg-pink-600 {
+    background-color: #d4146d;
+}
+
+html.light .bg-pink-700 {
+    background-color: #b80f5c;
+}
+
+html.light .border-pink-600 {
+    border-color: #c21868;
+}
+
+html.light .border-pink-500 {
+    border-color: #c21868;
+}
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+html.light nav {
+    background-color: rgba(232, 191, 208, 0.72);
+    border-bottom: 1px solid rgba(17, 17, 17, 0.08);
+}
+
+/* Logo */
+html.light img[src="/logo.svg"] {
+    filter: brightness(0) saturate(100%)
+        invert(7%) sepia(5%) saturate(500%)
+        hue-rotate(320deg) brightness(90%);
+}
+
+/* Theme icon */
+html.light nav button {
+    color: #111111;
+}
+
+/* =========================================
+   INPUTS & SELECTS
+   ========================================= */
+
+html.light input,
+html.light textarea,
+html.light select {
+    color: #111111;
+    background-color: rgba(255, 255, 255, 0.42);
+    border-color: rgba(17, 17, 17, 0.16);
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+    color: rgba(17, 17, 17, 0.50);
+}
+
+html.light select option {
+    background-color: #e8bfd0;
+    color: #111111;
+}
+
+/* =========================================
+   IMAGE GENERATING OVERLAY
+   ========================================= */
+
+html.light .bg-black\/50 {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* =========================================
+   SELECTION & BUTTON
+   ========================================= */
+
+body::selection {
+    @apply bg-pink-600 text-white;
+}
+
+button {
+    @apply cursor-pointer;
+}
+
+/* =========================================
+   MOVING GRADIENT
+   ========================================= */
+
+.move-gradient {
+    background-image: linear-gradient(
+        to right,
+        var(--color-pink-500),
+        var(--color-pink-300)
+    );
+    background-size: 200% 100%;
+    animation: movegradient 5s infinite;
+}
+
+@keyframes movegradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
