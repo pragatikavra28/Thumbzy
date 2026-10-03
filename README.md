@@ -329,17 +329,17 @@ cd Thumbzy
 
 ### 2. Install dependencies
 
-If the project contains separate frontend and backend directories:
+The project has separate `client` (frontend) and `server` (backend) directories:
 
 ```bash
-cd frontend
+cd client
 npm install
 ```
 
 Then install backend dependencies:
 
 ```bash
-cd ../backend
+cd ../server
 npm install
 ```
 
